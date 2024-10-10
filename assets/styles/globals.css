@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#services {
+	background: rgb(35,136,169);
+	background: linear-gradient(148deg, rgba(35,136,169,1) 0%, rgba(33,79,135,1) 46%, rgba(14,11,54,1) 100%);
+}
+
+.font-heading {
+	@apply text-4xl font-semibold tracking-tight sm:text-3xl text-black
+}
