@@ -1,5 +1,4 @@
 import HomeForm from '@/components/forms/home-form'
-import Form from "@/components/Form";
 import Map from "@/components/Map";
 
 export const metadata = {
