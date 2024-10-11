@@ -1,3 +1,4 @@
+import HomeForm from '@/components/forms/home-form'
 import Form from "@/components/Form";
 import Map from "@/components/Map";
 
@@ -18,16 +19,7 @@ const ContactPage = () => {
 				<h3 className="font-text font-bold mb-2 text-sm">HAI DELLE DOMANDE?</h3>
 				<h1 className="font-heading mb-5">Contattaci</h1>
 				<p>Ci trovi in ufficio dal Lunedì al Venerdì dalle 09:00-12:30 e dalle 14:30-19:00, il Sabato dalle 09:00-12:30.</p>
-				<Form name='Pagina Contatto' textarea post={false}>
-					<div className="flex flex-col lg:flex-row items-center justify-between w-full gap-10">
-						<input required type="text" name="Nome" placeholder="*Nome" className="py-2 px-3 rounded-md border-2 border-gray-400 w-full" aria-label="Nome" />
-						<input type="text" name="Cognome" placeholder="Cognome" className="py-2 px-3 rounded-md border-2 border-gray-400 w-full" aria-label="Cognome" />
-					</div>
-					<div className="flex flex-col lg:flex-row items-center justify-between w-full gap-10">
-						<input required type="email" name="Email" placeholder="*Email" className="py-2 px-3 rounded-md border-2 border-gray-400 w-full" aria-label="Email" />
-						<input required type="text" name="Telefono" placeholder="*Cellulare" className="py-2 px-3 rounded-md border-2 border-gray-400 w-full" aria-label="Telefono" />
-					</div>
-				</Form>
+				<HomeForm />
 			</div>
 			<Map />
 		</>

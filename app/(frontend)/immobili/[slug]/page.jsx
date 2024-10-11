@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 import CopyLinkButton from "@/components/CopyLinkButton";
 import Carousel from "@/components/Carousel";
 import PortableText from "@/components/PortableTextComponent";
-import Form from "@/components/Form";
+import ContactForm from "@/components/forms/contact-form";
 
 export async function generateMetadata({ params }) {
   const post = await client.fetch(SINGLE_POST, { slug: params.slug });
@@ -130,20 +130,9 @@ const PropertyPage = async ({ params }) => {
 					<iframe title="Mappa dell'Immobile" src={`https://www.google.com/maps/embed/v1/place?key=${process.env.GOOGLE_MAPS_API_KEY}&maptype=satellite&q=${post.luogo.indirizzo}`} width="600" height="450"  className="w-full" allowFullScreen="" loading="lazy"></iframe>
 				</div>
 			</section>
-			<section>
-				<div className="my-32 flex flex-col">
-					<h1 className="font-heading">Richiedi Informazioni</h1>
-					<Form name='Pagina Immobile' textarea post={post.code}>
-					<div className="flex flex-col lg:flex-row items-center justify-between w-full gap-10">
-						<input required type="text" name="nome" placeholder="*Nome" className="py-2 px-3 rounded-md border-2 border-gray-400 w-full" aria-label="Nome" />
-						<input type="text" name="cognome" placeholder="Cognome" className="py-2 px-3 rounded-md border-2 border-gray-400 w-full" aria-label="Cognome" />
-					</div>
-					<div className="flex flex-col lg:flex-row items-center justify-between w-full gap-10">
-						<input required type="email" name="Email" placeholder="*Email" className="py-2 px-3 rounded-md border-2 border-gray-400 w-full" aria-label="Email" />
-						<input required type="text" name="Telefono" placeholder="*Cellulare" className="py-2 px-3 rounded-md border-2 border-gray-400 w-full" aria-label="Telefono" />
-					</div>
-					</Form>
-				</div>
+			<section className="my-16">
+				<h1 className="font-heading mb-3">Richiedi informazioni</h1>
+				<ContactForm post={post.code} />
 			</section>
 			<div className="flex mx-auto mt-5">
 				<Button text='Torna Indietro' link='/immobili' />
