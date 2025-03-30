@@ -17,9 +17,9 @@ export default function LatestBox({
   rentPrice,
 }) {
   return (
-    <a key={id} href={`/immobili/` + slug} className="flex flex-col xl:flex-row gap-5 my-3 shadow-xl shadow-gray-400">
+    <a key={id} href={`/immobili/` + slug} className="flex flex-col xl:flex-row gap-5 my-3 shadow-xl shadow-gray-400 w-full">
       <Image src={image} alt={`Immagine dell'Immobile: ${title}`} className="w-full xl:w-[600px]" width={400} height={200} priority />
-      <div className="flex flex-col mt-3 justify-between px-5 xl:px-0 xl:pr-5">
+      <div className="flex flex-col mt-3 justify-between px-5 xl:px-0 xl:pr-5 w-full">
         <div>
           <div className="flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center w-auto">
             <div>

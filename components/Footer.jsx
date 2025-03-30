@@ -35,8 +35,8 @@ const Footer = () => {
 							<p>P.IVA: 02617340415</p>
 						</div>
 						<div className="flex flex-col justify-center items-center lg:flex-row gap-5 my-8 lg:my-0">
-							<Link href="/">Privacy & Cookie Policy</Link>
-							<Link href="/">Revoca Consensi</Link>
+							<Link href="/cookie-policy">Privacy & Cookie Policy</Link>
+							<Link href="/revoca-consensi">Revoca Consensi</Link>
 							<Link href="/sitemap">Sitemap</Link>
 						</div>
 					</div>

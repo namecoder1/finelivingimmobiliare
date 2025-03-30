@@ -35,7 +35,7 @@ const RootLayout = ({children}) => {
 				<link rel="icon" href="/icon-192x192.png" />
 				<link rel="icon" href="/icon.svg" />
 			</Head>
-			<body className={`${montserrat.className}`}>
+			<body className={`${montserrat.className} ${`${kronaOne.className}`}>`}>
 				{children}
 			</body>
 		</html>
